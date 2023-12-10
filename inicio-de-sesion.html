@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/79c6cb5f4b.js" crossorigin="anonymous"></script>
+	<title>Iniciar Sesion</title>
+	<link rel="icon" type="image/x-icon" href="../../imagenes/favicon.png">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+        *{
+		    margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		a {
+			text-decoration: none;
+			outline: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		body {
+		    font-family: 'Noto Sans JP', sans-serif;
+			background: #f2f2f2;
+		}
+
+		.texto-encima{
+		    position: absolute;
+		    top: 60px;
+		    left: 10px;
+		}
+
+		h1{
+			font-family: 'Nova Square', sans-serif;
+			color: white;
+			line-height: 35px;
+			padding-left: 20px;
+			padding-top: 150px;
+			font-size: 40px;
+			text-align: right;
+			text-transform: uppercase;
+
+			position: relative;
+			width: 548px;
+			height: 320px;
+		}
+
+		p{
+			font-family: 'Syne Mono', monospace;
+			color: white;
+			line-height: 25px;
+			padding-left: 20px;
+			padding-top: -20px;
+			font-size: 30px;
+			text-align: right;
+			text-transform: uppercase;
+
+			float: right;
+			position: relative;
+			width: 448px;
+			
+		}
+
+		.cuadro{
+			color: black; /* Sombras del contorno del cuadro*/
+			position: absolute;
+			top: 40px;
+		    left: 250px;
+
+		    float: right;
+			width: 400px;
+			height: 450px;
+			margin-top: 100px;
+			margin-left: 440px;
+			background-color: rgba(89, 101, 94, 0.2); /* Para poner el cuadro transparente*/
+			border-radius: 5px; /* Para las esquinas del cuadro*/
+			backdrop-filter: blur(3px); /* Para poner el cuadro borroso*/
+			box-shadow: 4px 4px 100px;
+		}
+
+		.datos{
+			color: black;
+			text-align: left;
+			line-height: 50px;
+			padding-left: 80px;
+			padding-top: 50px;
+		}
+
+		.buttons{
+			text-align: right;
+			padding-right: 90px;
+			padding-top: 5px;
+			margin: auto;
+		}
+
+		.navbar {
+			background: orange;
+			position: sticky;
+			top: 0;
+		}
+
+		.navbar a {
+			color: #fff;
+			display: inline-block;
+			padding: 20px;
+			width: 100%;
+			text-align: center;
+			color: #000;
+			transition: .3s ease-out all;
+		}
+
+		.navbar a:hover {
+			background: #1D2F3D;
+			color: #fff;
+			text-decoration: none;
+			text-shadow: 0 0 30px black;
+		}
+
+		.contenedor {
+			max-width: 1200px;
+			width: 90%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.contenedor-imagen {
+			height: 100vh;
+		}
+
+		.contenedor-imagen img {
+			width: 100%;
+			height: 100%;
+			vertical-align: top;
+			object-fit: cover;
+			object-position: 0 bottom;
+		}
+
+		.navbar2 a{
+			color: black;
+			border-radius: 25px;
+			box-shadow: 1px 1px 3px;
+			font-size: 20px;
+			padding-top: 15px;
+			text-align: center;
+			margin: 20px;
+			width: 80px;
+			height: 50px;
+			background-color: blue;
+			display: inline-block;
+			padding: 10px 10px;
+			font-family: arial;
+			font-weight: 600;
+			transition-duration: 0.5s;
+			text-decoration: none;
+		}
+
+		.navbar2 a:hover {
+			background-color: blue;
+			transform: scale(1.1);
+		}
+
+		p2{
+			color: darkred;
+			font-size: 30px;
+		}
+
+		.contenedos p3{
+			top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="contenedor">
+				<form><br>Buscar<input/></form>
+				<a href="#">Iniciar Sesion</a>
+				<a href="#">Registrarse</a>
+				<a href="#">Sobre Nosotros</a>
+				<a href="#">Ubicacion</a>
+				<a href="#">Idioma</a>
+			</div>
+		</nav>
+		<div class="contenedor-imagen">
+			<a href="#">
+				<img src="https://images.pexels.com/photos/1086586/pexels-photo-1086586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="marca">
+			</a>
+		</div>
+	</header>
+
+		<div class="cuadro">
+			<div class="datos">
+			<h3>Nombre completo<p2>*</p2></h3>
+			<form><!--barra para que el usuario escriba en la pagina-->
+		        <input/>
+		    </form>
+			<h3>Telefono</h3>
+			<form><!--barra para que el usuario escriba en la pagina-->
+		        <input/>
+		    </form>
+			<h3>Correo electronico<p2>*</p2></h3>
+			<form><!--barra para que el usuario escriba en la pagina-->
+		        <input/>
+		    </form>
+			</div>
+			<div class="navbar2">
+			<div class="buttons">
+				<a href="#">Enviar</a>
+			</div>
+			</div>
+		</div>
+			<div class="texto-encima">
+			<h1>Tu mejor invercion con toda la tradicion de colchagua</h1>
+			<p>Ven a conocer "Atlas de Santa Cruz" el nuevo proyecto que tenemos para ti ¡NO TE LO PIERDAS!</p>
+		</div>
+	</div>
+</body>
+</html>
